@@ -1,0 +1,216 @@
+.first-bg {
+    background-image: url("images/desktop/image-hero.jpg");
+    height: 100vh;
+    width: 100%;
+    padding-left: 150px;
+}
+
+@media (max-width: 375px){
+    .first-bg {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-image: url("images/mobile/image-hero.jpg");
+        height: 100vh;
+    }
+}
+
+.navbar-1 {
+    padding: 3% 0;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.navbar-1 a {
+    color: white;
+    font-family: "Alata";
+    
+}
+
+
+.Features {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    display: flex; 
+    padding-right: 30px;
+}
+
+.nav-link, .icon{
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after, .icon::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+
+}
+
+.nav-link:hover:after, .icon:hover::after{
+    width: 100%;
+}
+
+
+.hero-text {
+    width: 60%;
+}
+
+.text-hero {
+    font-weight: 100;
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    text-align: left;
+    padding: 30px 40px;
+    opacity: 0.92;
+}
+
+
+.interactive-img{
+    
+    z-index: -1;
+    position: relative;
+    right: 290px;
+}
+
+
+.interactive-header {
+    font-weight: 100;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.interactive-p {
+    color:hsl(0, 0%, 55%);
+    font-family: "Alata";
+    margin-left: 50px;
+}
+
+.interactive-text {
+    position: absolute;
+    width: 50%;
+    right: 10px;
+    top: 290px;
+    background-color: white;
+    line-height: 2;
+    padding: 3%;
+    text-align: left;
+}
+
+.interactive-container {
+    padding-left: 400px;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+
+.gallery-hero {
+    padding-bottom: 150px;
+}
+
+.gallery {
+    padding: 10% 150px;
+    padding-bottom: 100px;
+}
+
+.gallery-btn {
+    float: right;
+    padding: 5px 40px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.gallery h1 {
+    text-transform: uppercase;
+    line-height: 2;
+    font-weight: 100;
+}
+
+.second-gallery-bg {
+    margin-top: 20px;
+    position: relative;
+}
+
+.first-gallery-bg {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+img {
+    z-index: -1;
+}
+
+.first-gallery-bg:hover, .second-gallery-bg:hover{
+    opacity: 0.5;
+}
+
+
+
+.bg-name {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    text-transform: uppercase;
+    color: white; 
+    font-size: 30px;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.line::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.footer {
+    padding: 50px 150px;
+    background-color: black;
+}
+
+.icon, .end-credit{
+    margin: 5px;
+    float: right;
+    color: white;
+    padding: 0 10px ;
+}
+
+.foot-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white
+}
+
+.fonts {
+    padding-top: 20px;
+}
+.font-navbar a {
+    color: white;
+    position: relative;
+    top: 15px;
+    
+}
+
+.end-credit {
+    position: relative;
+    bottom: 20px;
+    opacity: 0.5;
+}
