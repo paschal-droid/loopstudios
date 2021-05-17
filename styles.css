@@ -1,216 +1,368 @@
-.first-bg {
-    background-image: url("images/desktop/image-hero.jpg");
-    height: 100vh;
-    width: 100%;
-    padding-left: 150px;
+.hero-section {
+    background-image: url(images/desktop/image-hero.jpg);
+    height: 650px;
+    color: white;
 }
 
-@media (max-width: 375px){
-    .first-bg {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        background-image: url("images/mobile/image-hero.jpg");
-        height: 100vh;
-    }
-}
-
-.navbar-1 {
-    padding: 3% 0;
-}
-
-.nav-item {
-    margin: 0 5px;
+.navbar {
+    padding: 3% 8%;
+    font-family: "Alata";
 }
 
 .navbar-brand {
-    font-size: 2rem;
-    font-weight: bold;
-    
-}
-
-.navbar-1 a {
     color: white;
-    font-family: "Alata";
-    
+    font-size: 3rem;
+    font-weight: 900;
+ }
+
+.navbar-brand:hover {
+    color: black;
 }
 
+ .navbar button {
+    color: white;
+    background-color: transparent;
+    opacity: 3;
 
-.Features {
-    align-items: flex-end;
-    flex-direction: column-reverse;
-    display: flex; 
-    padding-right: 30px;
+ }
+.nav {
+    margin-right: 20px;
 }
-
-.nav-link, .icon{
-    margin: 0 10px;
-    position: relative;
+.nav a {
+    margin: 0 3px;
+    color: white;
 }
-
-.nav-link::after, .icon::after{
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.5s;
-
-}
-
-.nav-link:hover:after, .icon:hover::after{
-    width: 100%;
-}
-
 
 .hero-text {
-    width: 60%;
+   text-align: left;
+   display: inline-block;
+   margin: 0 7%;
+   margin-top: 50px;
+   width: 50%;
+   border: 5px solid; 
 }
 
-.text-hero {
+.hero-text h1 {
     font-weight: 100;
-    font-size: 5rem;
-    line-height: 1;
     text-transform: uppercase;
-    color: white;
-    letter-spacing: 3px;
-    text-align: left;
-    padding: 30px 40px;
-    opacity: 0.92;
-}
-
-
-.interactive-img{
-    
-    z-index: -1;
-    position: relative;
-    right: 290px;
-}
-
-
-.interactive-header {
-    font-weight: 100;
+    display: inline-block;
+    margin: 20px;
     font-size: 3.5rem;
-    line-height: 1;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    letter-spacing: 2px;
+
 }
 
-.interactive-p {
-    color:hsl(0, 0%, 55%);
-    font-family: "Alata";
-    margin-left: 50px;
+.interaction {
+    padding: 8% 8% 0;
 }
 
-.interactive-text {
-    position: absolute;
-    width: 50%;
-    right: 10px;
-    top: 290px;
-    background-color: white;
-    line-height: 2;
-    padding: 3%;
-    text-align: left;
+.creation-btn {
+    font-size: 17px;
+    padding: 10px 30px;
 }
 
-.interactive-container {
-    padding-left: 400px;
-    position: relative;
-    padding-bottom: 5%;
-}
-
-
-.gallery-hero {
-    padding-bottom: 150px;
-}
-
-.gallery {
-    padding: 10% 150px;
-    padding-bottom: 100px;
-}
-
-.gallery-btn {
-    float: right;
-    padding: 5px 40px;
-    text-transform: uppercase;
+.int-img {
+    background-image: url(images/desktop/image-interactive.jpg);
+    height: 500px;
+    width: 700px;
+    border: 0;
     border-radius: 0;
+    
 }
-
-.gallery h1 {
+.interaction-text h1 {
     text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.interaction p {
+    font-family: "Alata";
+    color: hsl(0, 0%, 55%);
+    padding-top: 20px;
+    word-spacing: 5px;
     line-height: 2;
-    font-weight: 100;
+    padding-right: 0;
 }
 
-.second-gallery-bg {
-    margin-top: 20px;
+.interaction-text {
+    width: 550px;
+    height: auto;
+    padding: 3% 4%;
+    padding-bottom: 40px;
     position: relative;
+    left: 580px;
+    bottom: 350px;
+    border-radius: 0;
+    border: 0;
 }
 
-.first-gallery-bg {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-img {
-    z-index: -1;
-}
-
-.first-gallery-bg:hover, .second-gallery-bg:hover{
-    opacity: 0.5;
+.img-mobile {
+    display: none;
 }
 
 
 
-.bg-name {
+.catalog-text {
     position: absolute;
     bottom: 30px;
     left: 50px;
     text-transform: uppercase;
-    color: white; 
+    color: white;
     font-size: 30px;
     font-weight: 100;
     opacity: 0.8;
 }
 
-.line::after {
-    content: "\A";
-    white-space: pre;
+.row {
+    padding: 0 8%;
 }
 
-.footer {
-    padding: 50px 150px;
-    background-color: black;
-}
-
-.icon, .end-credit{
-    margin: 5px;
-    float: right;
-    color: white;
-    padding: 0 10px ;
-}
-
-.foot-text {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white
-}
-
-.fonts {
-    padding-top: 20px;
-}
-.font-navbar a {
-    color: white;
-    position: relative;
-    top: 15px;
+.cata-heading {
+    padding: 0 8% 50px;
+    text-transform: uppercase;
     
 }
 
-.end-credit {
-    position: relative;
-    bottom: 20px;
-    opacity: 0.5;
+.cata-heading button {
+    float: right;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: white;
+    margin-right: 10px;
 }
+
+.cata-heading button:hover {
+    color: white;
+    background: black;
+}
+
+.cata-heading h1 {
+    font-weight: 100;
+}
+
+
+.catalog-img {
+    margin: 10px 0;
+    position: relative;
+}
+
+.catalog-img:hover {
+    opacity: 0.6;
+    transition-duration: 2s;
+    transform: scale(1.05);
+
+}
+
+.catalog {
+    padding-bottom: 200px;
+}
+
+footer {
+    background: black;
+}
+.footer {
+    padding: 4% 8% 0;
+    color: white;
+}
+.footer h1 {
+    display: inline;
+    margin-top: 70px;
+    font-weight: 600;
+}
+.footer img {
+    margin: 0 7px;
+}
+
+.fonts {
+    float: right;
+    padding-top: 20px;
+}
+
+.bottom-nav {
+    padding: 4% 0;
+}
+
+.copywright {
+    float: right;
+}
+
+.rear {
+    margin: 0 7px;
+}
+            /* css for mobile menu */
+.mobile-menu {
+    background: black;
+    padding: 15%;
+    display: none;
+}
+
+.mobile-menu h1 {
+    font-weight: 600;
+}
+.mobile-menu img {
+    float: right;
+    margin: 7px ;
+    margin-top: 13px;
+}
+
+.hamburger {
+    padding: 20% 0;
+}
+.hamburger p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 30px 0;
+    font-weight: 100;
+}
+
+.second-class {
+    display: none;
+}
+
+@media (max-width: 950px) {
+
+    .hero-section {
+        background-image: url(images/mobile/image-hero.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 800px;
+    }
+
+    .button-nav {
+        text-align: right;
+        margin-right: 40px;
+    }
+
+    .navbar-brand{
+        font-size: 2rem;
+    }
+
+    .hero-text{
+        width: auto;
+        margin: 30px;
+        margin-top: 150px;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+        padding: 10px;
+    }
+
+    .hero-section img {
+        z-index: -1;
+    }
+
+    .int-img {
+        background-image: url(images/mobile/image-interactive.jpg);
+        background-repeat: no-repeat;
+        height: 500px;
+        width: auto;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .interaction-text {
+        position: static;
+        width: auto;
+    }
+
+    .catalog-img {
+        display: none;
+    }
+
+    .img-mobile {
+        margin: 10px 0;
+        position: relative;
+        display: inline-block;
+    }
+
+    .img-mobile:hover {
+        opacity: 0.6;
+        transition-duration: 2s;
+        transform: scale(1.05);
+    }
+
+    .mob-btn button{
+        text-transform: uppercase;
+        border-radius: 0;
+        background: white;
+        margin-left: 40px;
+    }
+
+    .mob-btn button:hover {
+        color: white;
+        background: black;
+    }
+    .mob-btn {
+        text-align: center;
+    }
+
+    .cata-heading {
+        text-align: center;
+    }
+
+    .cata-heading button{
+        display: none;
+    }
+
+    .mobile-menu {
+        height: 800px;
+    }
+    .nav a {
+        display: none;
+    }
+    .button-nav {
+        margin-left: 140px;
+        margin-right: 0;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        font-family: "Josefin Sans";
+    }
+
+
+    .footer h1 {
+        display: block;
+        margin-top: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .second-class {
+        display: inline-block;
+        text-align: center;
+        margin-left: 100px;
+        
+    }
+
+    .fonts {
+        display: none;
+    }
+
+    .bottom-nav {
+        padding: 4% 0;
+    }
+
+    .copywright {
+        text-align: justify;
+        margin-right: 50px;
+    }
+
+    .rear {
+        margin: 13px 0;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .attribution, .attribution a {
+        text-align: center;
+    }
+
+    
+}
+

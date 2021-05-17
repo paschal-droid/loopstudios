@@ -1,9 +1,11 @@
-// $(".nav-link").each(function () {
-//     $(".nav-link").click(function () {
-//         $(".nav-link").css("border-bottom", "3px solid white" )
-//     })
-// })
+$(".button-nav").click(function (params) {
+    $(".mobile-menu").css("display", "block");
+    $(".nav-section").css("display", "none");
+    
+})
 
-// $(this.Attr("id")).click(function (params) {
-//     this.css({"opacity": "0.5"})
-// // })
+$(".close-icon").click(function (params) {
+    $(".nav-section").css("display", "block");
+    $(".mobile-menu").css("display", "none");
+    
+})
